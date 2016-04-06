@@ -1,0 +1,263 @@
+.snapshot {
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	box-shadow: 5px 5px 5px #ccc;
+}
+
+.snapshot-disabled {
+	opacity: .3;
+	filter: alpha(opacity=40); /* msie */
+	
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	
+	background-color: grey;
+	
+}
+
+
+.skill-snapshot {
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	box-shadow: 5px 5px 5px #ccc;
+	margin-right: 10px;
+}
+
+.skill-snapshot:active {
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	margin-right: 10px;
+	border: 1px solid yellow;
+}
+
+.skill-snapshot-selected {
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	margin-right: 10px;
+	border: 1px solid yellow;
+}
+
+.snapshot-targeted {
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	
+	background-color: yellow;
+	
+}
+
+.snapshot-targeted {
+	opacity: .7;
+	filter: alpha(opacity=40); /* msie */
+	
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	margin-right: 10px;
+}
+
+.snapshot-container-targeted {
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	margin-right: 10px;
+	margin-bottom: -4px;
+	
+	background-color: yellow;
+}
+
+.effect-snapshot {
+	min-width: 20px;
+	min-height: 20px;
+	max-width: 20px;
+	max-height: 20px;
+	margin-top: -10px;
+	margin-right: 3px;
+	position: relative;
+}
+
+.card {
+	padding: 5px;
+	background-color: #eeee;
+	width: 50%;
+	min-width: 575px;
+	height: 135px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	border: 1px solid black;
+	box-shadow: 5px 5px 5px grey;
+}
+
+.card2 {
+	background-color: #eeee;
+	min-width: 50px;
+	max-width: 320px;
+	height: 130px;
+	margin-left: 50px;
+	margin-bottom: 5px;
+	display:inline-block;
+}
+
+.col-sm-1 {
+	width: 100px;
+	margin-right: 5px;
+}
+
+.col-sm-5 {
+	width: 510px;
+	min-width: 510px;
+	position: relative;
+}
+
+.effect-rack {
+	width: 200px;
+	height: 20px;
+	/*background-color: grey;*/
+	margin-bottom: 2px;
+}
+
+.effect-rack2 {
+	width: 200px;
+	height: 20px;
+	/*background-color: grey;*/
+	text-align: right;
+	margin-left: 35px;
+}
+
+.myProgress {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  background-color: #808080;
+  z-index: -1;
+   box-shadow: 10px 10px 5px #ddd;
+   border-radius: 15px;
+   margin-top: 10px;
+}
+
+.myBar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #4CAF50;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.label {
+  position: absolute;
+  padding-left: 35px;
+  text-align: center;
+  line-height: 14px;
+  color: #e6e6e6;
+  text-shadow: 1px 1px black;
+}
+
+.end-turn-container {
+	margin-left: 30%;
+	display: inline-block;
+	width: 40%;
+	height: 150px;
+	background-color: grey;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	padding-left: 2%;
+}
+
+.end-turn-container img {
+	margin-top: 10px;
+}
+
+.info-detail-container {
+	margin-left: 10%;
+	width: 80%;
+	height: 130px;
+	background-color: grey;
+	margin-bottom: 10px;
+	margin-top: 3px;
+	border-radius: 10px;
+}
+
+.img-detail-container {
+	padding-top: 110px;
+}
+
+.text-detail-container {
+	padding-top: 50px;
+	margin-left: 60px;
+	color: white;
+}
+
+.energy-container {
+	background-color: white;
+	width: 40%;
+	height: 90%;
+	display: inline-block;
+	z-index: 1;
+	border: 1px solid;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+
+
+.player-img{
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	display: inline-block;
+	margin-left: 15px;
+	margin-top: -125px;
+}
+
+button {
+	box-shadow: 5px 5px 5px grey;
+}
+
+button:active{
+	box-shadow: 3px 3px 5px grey;
+}
+
+.tooltip-container {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 2px;
+}
+
+/* Tooltip text */
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+	top: -5px;
+    left: 105%; 
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip-container:hover .tooltiptext {
+    visibility: visible;
+}
+

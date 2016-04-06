@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "name": "Kirito",
+        "description": "Starting at the Town of Beginnings as an ex-Beta Tester, Kirito uses his knowledge from the Beta test and his sword skills to dominate his opponents in battle.",
+        "image": "http://localhost:8000/media/img/skills/kirito_profile_D67Qju5.PNG",
+        "skills": [
+            1,
+            2,
+            3,
+            5
+        ],
+        "linked_character": null,
+        "character_type": "Player",
+        "time_period": "SAO",
+        "activating_missions": [],
+        "slug": "kirito"
+    },
+    {
+        "id": 2,
+        "name": "Asuna",
+        "description": "In order to achieve her goal of returning to the real world, Asuna has become a strong fighter in order to survive. Using her superior speed, Asuna chips away at her opponents with her lightning fast sword skills and combos. ",
+        "image": "http://localhost:8000/media/img/skills/asuna-hood-profile_QkX8AI2.PNG",
+        "skills": [
+            6,
+            7,
+            8,
+            9
+        ],
+        "linked_character": null,
+        "character_type": "Player",
+        "time_period": "SAO",
+        "activating_missions": [],
+        "slug": "asuna"
+    },
+    {
+        "id": 3,
+        "name": "Eugene",
+        "description": "Leading as the head general for the Salamander race, Eugene was said to be the strongest player in ALO until he was defeated by Kirito. Using his Fire magic and the Demonic Sword Gram, Eugene is able to ignore enemy defenses and counter incoming attacks. ",
+        "image": "http://localhost:8000/media/img/skills/eugine-profile.PNG",
+        "skills": [
+            10,
+            11,
+            12,
+            13
+        ],
+        "linked_character": null,
+        "character_type": "Player",
+        "time_period": "ALO",
+        "activating_missions": [],
+        "slug": "eugene"
+    },
+    {
+        "id": 4,
+        "name": "Asuna (New ALO)",
+        "description": "In her quest to prove to herself she is still a strong player, Asuna challenges Zekken to a 1 on 1 fight. Using her speed and magical sword skills, Asuna creates openings with her quick sword skills and goes for the kill when she sees an opening. ",
+        "image": "http://localhost:8000/media/img/skills/Asuna_newALO.jpg",
+        "skills": [
+            14,
+            15,
+            16,
+            17
+        ],
+        "linked_character": null,
+        "character_type": "Player",
+        "time_period": "ALO2",
+        "activating_missions": [],
+        "slug": "asuna-new-alo"
+    }
+]

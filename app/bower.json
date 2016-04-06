@@ -1,0 +1,22 @@
+{
+  "name": "saoArenaApp",
+  "description": "test app for saoArena",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "Mason Maines"
+  ],
+  "license": "MIT",
+  "homepage": "www.sao-arena.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.1",
+    "bootstrap": "^3.3.6"
+  }
+}
