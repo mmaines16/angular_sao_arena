@@ -48,4 +48,4 @@ function init(){
 	var skills = document.getElementsByClassName("skill-snapshot");
 }
 
-window.setTimeout(init, 200);
+window.setTimeout(init, 500);

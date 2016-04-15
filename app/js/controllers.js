@@ -239,7 +239,8 @@ saoArenaApp.service('TargetService', function() {
 
 saoArenaApp.controller('CharacterListCtrl', ['$scope', '$http', 'StateService', 'TurnService', 'EffectService', 'TargetService', 
 						function ($scope, $http, StateService, TurnService, EffectService, TargetService) {
-
+	
+	
 	$scope.state = StateService;
 	$scope.turnSrv = TurnService;
 	$scope.effectSrv = EffectService;
