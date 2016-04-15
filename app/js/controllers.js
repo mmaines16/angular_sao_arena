@@ -374,15 +374,17 @@ saoArenaApp.controller('CharacterListCtrl', ['$scope', '$http', 'StateService', 
 			$(elem2).addClass("tooltip-container");
 			
 			elem2.innerHTML = '<img class="effect-snapshot" src="' + path + '"/>';
-			elem2.innerHTML += '<span class="tooltiptext">' + 'test' + '</span>';
 			
 			
-			if(targets.length < 3 || targetSrv.getTargetString() == "self-ally-1")
+			
+			if(targetSrv.getTargets().length < 3 || targetSrv.getTargetString() == "self-ally-1")
 			{
+				elem2.innerHTML += '<span class="tooltiptext tooltiptextright">' + 'test' + '</span>';
 				effectRack.appendChild(elem2);
 			}
 			else
 			{
+				elem2.innerHTML += '<span class="tooltiptext tooltiptextleft">' + 'test' + '</span>';
 				effectRack.insertBefore(elem2, effectRack.firstChild);
 			}
 			
