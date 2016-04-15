@@ -10,7 +10,7 @@
 			{
 				"id": 0,
 				"name": "Sword Skill Slash",
-				"image": "app\\characters\\Kirito\\1. Sword Skill Slash\\sword-skill-slash2.PNG"
+				"image": "app/characters/Kirito/1. Sword Skill Slash/sword-skill-slash2.PNG"
 			},
 			{
 				"id": 1,
@@ -20,12 +20,12 @@
 			{
 				"id": 2,
 				"name": "Beta Analysis",
-				"image": "app\\characters\\Kirito\\3a. Beta Analysis\\Beta-Analysis.PNG"
+				"image": "app/characters/Kirito/3a. Beta Analysis/Beta-Analysis.PNG"
 			},
 			{
 				"id": 3,
 				"name": "Block",
-				"image": "app\\characters\\Kirito\\Block\\Block3.PNG"
+				"image": "app/characters/Kirito/Block/Block3.PNG"
 			}
 		]
 	},
