@@ -40,6 +40,17 @@ function changeHealth(amount, id) {
   }
 }
 
+
+function openModal() {
+	$('#end-turn-modal').show();
+}
+
+function closeModal() {
+	$('#end-turn-modal').hide();
+}
+
+$('#modal-close-button').on("click", closeModal);
+
 function init(){
 	for(i=0; i<document.getElementsByClassName("myBar").length; i++){
 		changeHealth(100, i);
@@ -47,6 +58,7 @@ function init(){
 	
 	var skills = document.getElementsByClassName("skill-snapshot");
 }
+
 
 $(window).load(function() {
 	window.setTimeout(init, 500);

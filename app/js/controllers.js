@@ -246,17 +246,34 @@ saoArenaApp.controller('CharacterListCtrl', ['$scope', '$http', 'StateService', 
 	$scope.effectSrv = EffectService;
 	$scope.targetSrv = TargetService;
 	
-	$scope.EndTurn = function(characters, turnSrv, effectSrv) {
-		$scope.state.updateState("endTurn");
+	
+	$scope.EndTurn = function(characters, turnSrv, effectSrv, state) {
+		
+		if(state.getState()=="endingTurn")
+		{
+			closeModal();
+			$scope.state.updateState("endTurn");
+			$scope.ResetTurn(characters, turnSrv, effectSrv, state);
+		}
+		else
+		{
+			console.log(state);
+			
+			$scope.state.updateState("endingTurn");
+			openModal();
+			return;
+		}
+		
+	};
+	
+	$scope.ResetTurn = function(characters, turnSrv, effectSrv, state)
+	{
 		setTimeout(function() {
 			turnSrv.enableAllSkills(characters);
 			effectSrv.activateEffects();
 			$scope.state.updateState("mainState");
 		}, 5000);
-		
-		
-		
-	};
+	}
 	
 	$scope.UndoSkills = function(characters, turnSrv, effectSrv, state) {
 		if(state.getState() == "endTurn")
