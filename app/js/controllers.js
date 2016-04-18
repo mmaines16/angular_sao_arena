@@ -266,6 +266,11 @@ saoArenaApp.controller('CharacterListCtrl', ['$scope', '$http', 'StateService', 
 		
 	};
 	
+	$scope.cancelEndTurn =function(characters, turnSrv, effectSrv, state) {
+		$scope.state.updateState("mainState");
+		closeModal();
+	};
+	
 	$scope.ResetTurn = function(characters, turnSrv, effectSrv, state)
 	{
 		setTimeout(function() {
@@ -273,7 +278,7 @@ saoArenaApp.controller('CharacterListCtrl', ['$scope', '$http', 'StateService', 
 			effectSrv.activateEffects();
 			$scope.state.updateState("mainState");
 		}, 5000);
-	}
+	};
 	
 	$scope.UndoSkills = function(characters, turnSrv, effectSrv, state) {
 		if(state.getState() == "endTurn")
