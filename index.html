@@ -63,9 +63,13 @@
 								<!--
 								<p>{{state.getState()}}    {{state.getNameString()}} {{state.getSkillId()}}</p>
 								<p>{{state.getCharacterId()}}</p> -->
-								<div class="button-container">
-									<button value="end turn" ng-click="UndoSkills(characters, turnSrv, effectSrv, state)">Undo Skills</button> 
-									<button name="undoSkillsBtn" value="Undo Skills" ng-click="EndTurn(characters, turnSrv, effectSrv)">End Turn</button> 
+								<div class="button-container row">
+									<div class="col-md-6">
+										<button value="end turn" ng-click="UndoSkills(characters, turnSrv, effectSrv, state)">Undo Skills</button> 
+									</div>
+									<div  class="col-md-6">
+										<button name="undoSkillsBtn" value="Undo Skills" ng-click="EndTurn(characters, turnSrv, effectSrv)">End Turn</button> 
+									</div>
 								</div>
 							</div>
 						</div>
