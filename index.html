@@ -6,22 +6,74 @@
 		<link rel="stylesheet" href="app/css/app.css">
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"></script>
 		<script src="bower_components/angular/angular.js"></script>
 	</head>
 	
 	<body class="application">
 		<div ng-controller="CharacterListCtrl" class="row">
-			<div class="end-turn-container">
-				<img class="player-img" src="{{characters[0].image}}"/>
-				<div class="energy-container">
-					<div style="text-align: center;"> 
-						<p>{{state.getState()}}    {{state.getNameString()}} {{state.getSkillId()}}</p>
-						<p>{{state.getCharacterId()}}</p>
-						<button value="end turn" ng-click="UndoSkills(characters, turnSrv, effectSrv, state)">Undo Skills</button> 
-						<button name="undoSkillsBtn" value="Undo Skills" ng-click="EndTurn(characters, turnSrv, effectSrv)">End Turn</button> 
+			<div class="end-turn-container container">
+				<div class="row">
+					<div class="col-lg-2">
+						<img class="player-img" src="{{characters[0].image}}"/>
+					</div>
+					<div class="col-lg-6">
+						<div class="energy-container">
+							<div style="text-align: center;">
+								<div class="row energy-row">
+									<div class="col-sm-offset-2 col-sm-2">
+										<div class="energy energy-green"></div>
+									</div>
+									<div class="col-sm-offset-3 col-sm-2">
+										<div class="energy-counter">
+											<span>0</span>
+										</div>
+									</div>
+								</div>
+								<div class="row energy-row">
+									<div class="col-sm-offset-2 col-sm-2">
+										<div class="energy energy-red"></div>
+									</div>
+									<div class="col-sm-offset-3 col-sm-2">
+										<div class="energy-counter">
+											<span>0</span>
+										</div>
+									</div>
+								</div>
+								<div class="row energy-row">
+									<div class="col-sm-offset-2 col-sm-2">
+										<div class="energy energy-blue"></div>
+									</div>
+									<div class="col-sm-offset-3 col-sm-2">
+										<div class="energy-counter">
+											<span>0</span>
+										</div>
+									</div>
+								</div>
+								<div class="row energy-row">
+									<div class="col-sm-offset-2 col-sm-2">
+										<div class="energy energy-white"></div>
+									</div>
+									<div class="col-sm-offset-3 col-sm-2">
+										<div class="energy-counter">
+											<span>0</span>
+										</div>
+									</div>
+								</div>
+								<!--
+								<p>{{state.getState()}}    {{state.getNameString()}} {{state.getSkillId()}}</p>
+								<p>{{state.getCharacterId()}}</p> -->
+								<div class="button-container">
+									<button value="end turn" ng-click="UndoSkills(characters, turnSrv, effectSrv, state)">Undo Skills</button> 
+									<button name="undoSkillsBtn" value="Undo Skills" ng-click="EndTurn(characters, turnSrv, effectSrv)">End Turn</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<img class="player-img" src="{{characters[2].image}}"/>
 					</div>
 				</div>
-				<img class="player-img" src="{{characters[2].image}}"/>
 			</div>
 		</div>
 	
@@ -83,12 +135,14 @@
 		</div>
 		
 		<div class="row" ng-controller="CharacterListCtrl">
-			<div id="info-detail" class="info-detail-container">
-				<div class="col-md-1 img-detail-container">
-					<img id="img-detail" class="player-img" src="{{characters[0].image}}"/>
-				</div>
-				<div class="col-md-5 text-detail-container">
-					<p id="text-detail">{{characters[0].description}} </p>
+			<div id="info-detail" class="info-detail-container container">
+				<div class="row">
+					<div class="col-md-1 img-detail-container">
+						<img id="img-detail" class="player-img" src="{{characters[0].image}}"/>
+					</div>
+					<div class="col-md-5 text-detail-container">
+						<p id="text-detail">{{characters[0].description}} </p>
+					</div>
 				</div>
 			</div>
 		</div>

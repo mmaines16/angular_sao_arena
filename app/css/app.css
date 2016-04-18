@@ -18,7 +18,7 @@
 }
 
 .snapshot-disabled {
-	opacity: .3;
+	opacity: .6;
 	filter: alpha(opacity=40); /* msie */
 	
 	min-width: 100px;
@@ -36,8 +36,10 @@
 	min-height: 100px;
 	max-width: 100px;
 	max-height: 100px;
-	box-shadow: 5px 5px 5px #ccc;
-	margin-right: 10px;
+	box-shadow: 5px 5px 5px #b3b3b3; /*#ccc shadow color for no grey background*/
+	margin-right: 15px;
+	border-radius: 100px;
+	margin-bottom: 1px;
 }
 
 .skill-snapshot:active {
@@ -103,9 +105,9 @@
 .card {
 	padding: 5px;
 	background-color: #eeee;
-	width: 50%;
-	min-width: 575px;
-	height: 135px;
+	width: 60%;
+	min-width: 610px;
+	height: 140px;
 	margin-left: 5px;
 	margin-bottom: 5px;
 	border: 1px solid black;
@@ -154,7 +156,7 @@
   height: 20px;
   background-color: #808080;
   z-index: -1;
-   box-shadow: 10px 10px 5px #ddd;
+   box-shadow: 5px 5px 2px #bfbfbf;
    border-radius: 15px;
    margin-top: 10px;
 }
@@ -180,8 +182,8 @@
 .end-turn-container {
 	margin-left: 30%;
 	display: inline-block;
-	width: 40%;
-	height: 150px;
+	width: 37%;
+	height: 160px;
 	background-color: grey;
 	margin-bottom: 10px;
 	border-radius: 10px;
@@ -198,12 +200,12 @@
 	height: 130px;
 	background-color: grey;
 	margin-bottom: 10px;
-	margin-top: 3px;
+	margin-top: 10px;
 	border-radius: 10px;
 }
 
 .img-detail-container {
-	padding-top: 110px;
+	padding-top: 10px;
 }
 
 .text-detail-container {
@@ -214,13 +216,14 @@
 
 .energy-container {
 	background-color: white;
-	width: 40%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
 	display: inline-block;
 	z-index: 1;
 	border: 1px solid;
 	margin-top: 5px;
-	margin-right: -10px;
+	margin-left: 20px;
+	padding: 10px;
 }
 
 
@@ -230,8 +233,6 @@
 	max-width: 100px;
 	max-height: 100px;
 	display: inline-block;
-	margin-left: 15px;
-	margin-top: -125px;
 }
 
 button {
@@ -281,4 +282,51 @@ button:active{
 .tooltip-container:hover .tooltiptext {
     visibility: visible;
 }
+
+.energy {
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-top: 2px;
+}
+
+.energy-green {
+	background-color: #00ff00;
+}
+
+.energy-red {
+	background-color: red;
+}
+
+.energy-blue {
+	background-color: blue;Fend-
+}
+
+.energy-white {
+	background-color: white;
+}
+
+.energy-row {
+	border: 1px solid black;
+	border-radius: 2px;
+	max-width: 80%;
+	margin-left: 10%;
+	box-shadow: 2px 2px grey;
+}
+
+.button-container {
+	margin-top: 5px;
+}
+
+.skills {
+	background-color: #a6a6a6;
+	padding: 5px;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+
 
