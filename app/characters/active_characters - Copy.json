@@ -1,0 +1,17 @@
+[
+	{
+		"id": "0",
+		"name": "Kirito", 
+		"health": "100"
+	},
+	{
+		"id": "1",
+		"name": "Asuna", 
+		"health": "100"
+	},
+	{
+		"id": "2",
+		"name": "Eugine", 
+		"health": "100"
+	}
+]

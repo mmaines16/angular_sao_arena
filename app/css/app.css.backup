@@ -1,3 +1,14 @@
+.application {
+	background-image: url("../img/Aincrad_Background_1.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	overflow: hiddem;
+	max-height: 975px;
+	min-height: 975px;
+
+}
+
 .snapshot {
 	min-width: 100px;
 	min-height: 100px;
@@ -7,7 +18,7 @@
 }
 
 .snapshot-disabled {
-	opacity: .3;
+	opacity: .6;
 	filter: alpha(opacity=40); /* msie */
 	
 	min-width: 100px;
@@ -25,8 +36,10 @@
 	min-height: 100px;
 	max-width: 100px;
 	max-height: 100px;
-	box-shadow: 5px 5px 5px #ccc;
-	margin-right: 10px;
+	box-shadow: 5px 5px 5px #b3b3b3; /*#ccc shadow color for no grey background*/
+	margin-right: 15px;
+	border-radius: 100px;
+	margin-bottom: 1px;
 }
 
 .skill-snapshot:active {
@@ -92,9 +105,9 @@
 .card {
 	padding: 5px;
 	background-color: #eeee;
-	width: 50%;
-	min-width: 575px;
-	height: 135px;
+	width: 60%;
+	min-width: 610px;
+	height: 140px;
 	margin-left: 5px;
 	margin-bottom: 5px;
 	border: 1px solid black;
@@ -143,7 +156,7 @@
   height: 20px;
   background-color: #808080;
   z-index: -1;
-   box-shadow: 10px 10px 5px #ddd;
+   box-shadow: 5px 5px 2px #bfbfbf;
    border-radius: 15px;
    margin-top: 10px;
 }
@@ -169,8 +182,8 @@
 .end-turn-container {
 	margin-left: 30%;
 	display: inline-block;
-	width: 40%;
-	height: 150px;
+	width: 37%;
+	height: 160px;
 	background-color: grey;
 	margin-bottom: 10px;
 	border-radius: 10px;
@@ -179,6 +192,7 @@
 
 .end-turn-container img {
 	margin-top: 10px;
+	padding: 10px;
 }
 
 .info-detail-container {
@@ -187,12 +201,12 @@
 	height: 130px;
 	background-color: grey;
 	margin-bottom: 10px;
-	margin-top: 3px;
+	margin-top: 10px;
 	border-radius: 10px;
 }
 
 .img-detail-container {
-	padding-top: 110px;
+	padding-top: 10px;
 }
 
 .text-detail-container {
@@ -203,13 +217,14 @@
 
 .energy-container {
 	background-color: white;
-	width: 40%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
 	display: inline-block;
 	z-index: 1;
 	border: 1px solid;
 	margin-top: 5px;
-	margin-right: -10px;
+	margin-left: 20px;
+	padding: 10px;
 }
 
 
@@ -219,8 +234,6 @@
 	max-width: 100px;
 	max-height: 100px;
 	display: inline-block;
-	margin-left: 15px;
-	margin-top: -125px;
 }
 
 button {
@@ -248,16 +261,144 @@ button:active{
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
- 
+}
+
+.tooltiptextright {
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
 	top: -5px;
-    left: 105%; 
+    left: 105%;
+}
+
+.tooltiptextleft {
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+	top: -5px;
+    right: 105%; 
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip-container:hover .tooltiptext {
     visibility: visible;
 }
+
+.energy {
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-top: 2px;
+}
+
+.energy-green {
+	background-color: #00ff00;
+}
+
+.energy-red {
+	background-color: red;
+}
+
+.energy-blue {
+	background-color: blue;
+}
+
+.energy-white {
+	background-color: white;
+}
+
+.energy-row {
+	border: 1px solid black;
+	border-radius: 2px;
+	max-width: 80%;
+	margin-left: 10%;
+	box-shadow: 2px 2px grey;
+}
+
+.button-container {
+	margin-top: 5px;
+	font-size: 10px;
+}
+
+.skills {
+	background-color: #a6a6a6;
+	padding: 5px;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Modal Content/Box */
+.modal-header {
+	display: inline-block;
+	width: 100%;
+}
+
+/* Modal Content/Box */
+.modal-body {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.modal-close {
+	color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.shadow-modal {
+	background-color: #808080;
+	z-index: -1;
+	box-shadow: 10px 10px 5px #ddd;
+	border-radius: 15px;
+}
+
+.energy-table {
+	margin-left: 25%;
+	border: 1px solid black;
+	max-width: 50%;
+}
+
+.energy-table tr {
+	border-bottom: .5px solid grey;
+}
+
+.energy-table td {
+	width: 10%;
+	padding: 5px;
+}
+
+.td-border {
+	border-right: 1px solid black;
+}
+
+.energy-table span {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+
 

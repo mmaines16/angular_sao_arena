@@ -2,7 +2,7 @@
 	{
 		"id": 0,
 		"name": "Sword Skill Slash",
-		"image": "app\\characters\\Kirito\\1. Sword Skill Slash\\sword-skill-slash2.PNG",
+		"image": "app/characters/Kirito/1. Sword Skill Slash/sword-skill-slash2.PNG",
 		"target": "enemy-1",
 		"turn-length": 1,
 		"character": 0
@@ -10,7 +10,7 @@
 	{
 		"id": 1,
 		"name": "Block-Switch",
-		"image": "app\\characters\\Kirito\\2. Block-Switch\\Block-Switch.PNG",
+		"image": "app/characters/Kirito/2. Block-Switch/Block-Switch.PNG",
 		"target": "self-ally-1",
 		"turn-length": 1,
 		"character": 0
@@ -18,7 +18,7 @@
 	{
 		"id": 2,
 		"name": "Beta Analysis",
-		"image": "app\\characters\\Kirito\\3a. Beta Analysis\\Beta-Analysis.PNG",
+		"image": "app/characters/Kirito/3a. Beta Analysis/Beta-Analysis.PNG",
 		"linked_skill": 12,
 		"linked_turns": 1,
 		"target": "enemy-1",
@@ -28,7 +28,7 @@
 	{
 		"id": 3,
 		"name": "Block",
-		"image": "app\\characters\\Kirito\\Block\\Block3.PNG",
+		"image": "app/characters/Kirito/Block/Block3.PNG",
 		"target": "self-1",
 		"turn-length": 1,
 		"character": 0
@@ -36,7 +36,7 @@
 	{
 		"id": 4,
 		"name": "Fast Sword",
-		"image": "app\\characters\\Asuna\\1. Fast Sword\\Fast-Sword.PNG",
+		"image": "app/characters/Asuna/1. Fast Sword/Fast-Sword.PNG",
 		"target": "enemy-1",
 		"turn-length": 1,
 		"character": 1
@@ -44,7 +44,7 @@
 	{
 		"id": 5,
 		"name": "Rapier Combo",
-		"image": "app\\characters\\Asuna\\2. Rapier Combo\\rapier-combo.PNG",
+		"image": "app/characters/Asuna/2. Rapier Combo/rapier-combo.PNG",
 		"target": "enemy-1",
 		"turn-length": 2,
 		"character": 1
@@ -52,7 +52,7 @@
 	{
 		"id": 6,
 		"name": "Counter Jab",
-		"image": "app\\characters\\Asuna\\3. Counter Jab\\Counter-Jab3.PNG",
+		"image": "app/characters/Asuna/3. Counter Jab/Counter-Jab3.PNG",
 		"target": "self-1",
 		"turn-length": 1,
 		"character": 1
@@ -60,7 +60,7 @@
 	{
 		"id": 7,
 		"name": "Swift Dodge",
-		"image": "app\\characters\\Asuna\\4. Swift Dodge\\swift-dodge.PNG",
+		"image": "app/characters/Asuna/4. Swift Dodge/swift-dodge.PNG",
 		"target": "self-1",
 		"turn-length": 1,
 		"character": 1
@@ -68,7 +68,7 @@
 	{
 		"id": 8,
 		"name": "Ethereal Shift",
-		"image": "app\\characters\\Eugine\\1. Ethereal Shift\\ethereal-shift.PNG",
+		"image": "app/characters/Eugine/1. Ethereal Shift/ethereal-shift.PNG",
 		"target": "enemy-1",
 		"turn-length": 1,
 		"character": 2
@@ -76,7 +76,7 @@
 	{
 		"id": 9,
 		"name": "Explosive Counter",
-		"image": "app\\characters\\Eugine\\2. Explosive Counter\\explosive-counter.PNG",
+		"image": "app/characters/Eugine/2. Explosive Counter/explosive-counter.PNG",
 		"target": "self-1",
 		"turn-length": 1,
 		"character": 2
@@ -84,7 +84,7 @@
 	{
 		"id": 10,
 		"name": "Volcanic Blazer",
-		"image": "app\\characters\\Eugine\\3. Volcanic Blazer\\volcanic-blazer.PNG",
+		"image": "app/characters/Eugine/3. Volcanic Blazer/volcanic-blazer.PNG",
 		"target": "enemy-1",
 		"turn-length": 2,
 		"character": 2
@@ -92,7 +92,7 @@
 	{
 		"id": 11,
 		"name": "Demonic Sword Parry",
-		"image": "app\\characters\\Eugine\\4. Demonic Sword Parry\\demonic-sword-parry.PNG",
+		"image": "app/characters/Eugine/4. Demonic Sword Parry/demonic-sword-parry.PNG",
 		"target": "self-1",
 		"turn-length": 1,
 		"character": 2
@@ -100,7 +100,7 @@
 	{
 		"id": 12,
 		"name": "Finishing Blow",
-		"image": "app\\characters\\Kirito\\3b. Finishing Blow\\Finishing-Blow2.PNG",
+		"image": "app/characters/Kirito/3b. Finishing Blow/Finishing-Blow2.PNG",
 		"linked_skill": 2,
 		"linked_turns": 99,
 		"target": "enemy-1",
