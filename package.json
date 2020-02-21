@@ -5,10 +5,10 @@
   "description": "A test application for sao-arena",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.6.1",
-    "tmp": "0.0.23",
+    "http-server": "^0.12.1",
+    "tmp": "0.1.0",
     "bower": "^1.3.1",
-    "shelljs": "^0.2.6"
+    "shelljs": "^0.8.3"
   },
   "scripts": {
     "postinstall": "bower install",
