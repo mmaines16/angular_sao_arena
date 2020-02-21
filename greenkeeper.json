@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "bower_components/angular/package.json",
+        "bower_components/bootstrap/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
